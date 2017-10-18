@@ -1,5 +1,5 @@
 {
-	"name": "werewolf-mod-app",
+	"name": "app",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
@@ -25,17 +25,12 @@
 		"precommit": "lint-staged"
 	},
 	"lint-staged": {
-		"{src,tools}/**/*.js": [
-			"prettier --write",
-			"git add"
-		]
+		"{src,tools}/**/*.js": ["prettier --write", "git add"]
 	},
 	"eslintConfig": {
 		"extends": "react-app"
 	},
-	"moduleRoots": [
-		"src"
-	],
+	"moduleRoots": ["src"],
 	"engines": {
 		"node": "8.6.0",
 		"npm": "5.4.2",
